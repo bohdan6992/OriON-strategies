@@ -1,0 +1,33 @@
+version: 1
+default_branch: main
+strategies:
+  - id: cracen
+    notebook: notebooks/CRACEN.ipynb
+    run_order: 1
+    description: "Core canonical output (run first)."
+    params:
+      - name: run_date
+        type: date
+      - name: output_dir
+        default: ../signals
+
+  - id: arbitrage
+    notebook: notebooks/ArbitRage.ipynb
+    run_order: 2
+    depends_on: [cracen]
+    description: "Arbitrage signals (depends on CRACEN)."
+
+  - id: chrono
+    notebook: notebooks/ChronoFlow.ipynb
+    run_order: 3
+    description: "ChronoFlow analysis."
+
+  - id: opendoor
+    notebook: notebooks/OpenDoor.ipynb
+    run_order: 4
+    description: "OpenDoor analysis."
+
+  - id: couple
+    notebook: notebooks/CoupleDating.ipynb
+    run_order: 5
+    description: "Auxiliary experimental notebook."

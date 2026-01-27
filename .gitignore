@@ -1,0 +1,16 @@
+# outputs and big files
+signals/
+results/
+*.parquet
+*.h5
+*.pkl
+
+# env and caches
+.venv/
+.env
+.ipynb_checkpoints/
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
