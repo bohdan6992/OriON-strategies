@@ -31,3 +31,15 @@ strategies:
     notebook: notebooks/CoupleDating.ipynb
     run_order: 5
     description: "Auxiliary experimental notebook."
+
+  - id: sector_corr
+    notebook: notebooks/SectorCorr.ipynb
+    run_order: 6
+    description: "Sector peer correlation on earnings-reaction days (gap vs benchmark ETF)."
+    params:
+      - name: run_date
+        type: date
+      - name: lookback_years
+        default: 3
+      - name: min_days
+        default: 5
