@@ -12,10 +12,10 @@ strategies:
         default: ../signals
 
   - id: arbitrage
-    notebook: notebooks/ArbitRage.ipynb
+    notebook: notebooks/ARB•FADE.ipynb
     run_order: 2
     depends_on: [cracen]
-    description: "Arbitrage signals (depends on CRACEN)."
+    description: "ARB•FADE signals (depends on CRACEN)."
 
   - id: chrono
     notebook: notebooks/ChronoFlow.ipynb
