@@ -43,3 +43,10 @@ strategies:
         default: 3
       - name: min_days
         default: 5
+
+  - id: arbride
+    notebook: notebooks/ARB•RIDE.ipynb
+    run_order: 7
+    depends_on: [cracen]
+    description: "ARB•RIDE signals - the mirror of ARB•FADE on the same deviations, ridden
+      instead of faded (depends on CRACEN). Writes signals/arbride/."
