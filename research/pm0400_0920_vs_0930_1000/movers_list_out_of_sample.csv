@@ -1,0 +1,6 @@
+list,p_move2_disc,p_move2_val,all_tickers_val
+top 25 by discovery frequency,0.675,0.6375,0.1937
+top 50 by discovery frequency,0.6171,0.5669,0.1937
+top 100 by discovery frequency,0.549,0.5404,0.1937
+top 200 by discovery frequency,0.4376,0.4409,0.1937
+top 400 by discovery frequency,0.301,0.3246,0.1937
